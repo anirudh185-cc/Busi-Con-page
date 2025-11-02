@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Hospital</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f0fdf4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #16a34a;
+      color: #fff;
+      text-align: center;
+      padding: 40px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-size: 16px;
+      color: #dcfce7;
+    }
+
+    .container {
+      max-width: 850px;
+      background: #fff;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      text-align: center;
+      color: #14532d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #14532d;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #a7f3d0;
+      border-radius: 6px;
+      font-size: 16px;
+      background: #f0fdf4;
+      box-sizing: border-box;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #16a34a;
+      outline: none;
+      background: #ffffff;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #16a34a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #15803d;
+    }
+
+    footer {
+      text-align: center;
+      background: #16a34a;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hospital</h1>
+    <p>Caring Hands, Healing Hearts</p>
+  </header>
+
+  <div class="container">
+    <h2>Contact Form</h2>
+    <p>Reach out to our hospital staff for appointments, feedback, or general inquiries.</p>
+
+    <form onsubmit="showMessage(event)">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+      <label for="department">Department</label>
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option value="General">General Medicine</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Gynecology">Gynecology</option>
+        <option value="Emergency">Emergency</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" placeholder="Enter your subject" required />
+
+      <label for="message">Message / Query</label>
+      <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Hospital. All Rights Reserved.
+  </footer>
+
+  <script>
+    function showMessage(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been successfully submitted.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
