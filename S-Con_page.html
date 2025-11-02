@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | School</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f1f5f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #fff;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    form {
+      margin-bottom: 40px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #0d6efd;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #0d6efd;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #084298;
+    }
+
+    footer {
+      text-align: center;
+      background: #0d6efd;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>School</h1>
+    <p>Learning Today, Leading Tomorrow</p>
+  </header>
+
+  <div class="container">
+    <h2>Contact Form</h2>
+    <p>Parents or students can use this form to contact the school administration.</p>
+
+    <form onsubmit="showMessage(event)">
+      <label for="student-name">Student Name</label>
+      <input type="text" id="student-name" placeholder="Enter student name" required />
+
+      <label for="parent-name">Parent / Guardian Name</label>
+      <input type="text" id="parent-name" placeholder="Enter parent or guardian name" required />
+
+      <label for="class">Class</label>
+      <select id="class" required>
+        <option value="">Select Class</option>
+        <option value="Nursery">Nursery</option>
+        <option value="KG">KG</option>
+        <option value="1">Class 1</option>
+        <option value="2">Class 2</option>
+        <option value="3">Class 3</option>
+        <option value="4">Class 4</option>
+        <option value="5">Class 5</option>
+        <option value="6">Class 6</option>
+        <option value="7">Class 7</option>
+        <option value="8">Class 8</option>
+        <option value="9">Class 9</option>
+        <option value="10">Class 10</option>
+        <option value="11">Class 11</option>
+        <option value="12">Class 12</option>
+      </select>
+
+      <label for="section">Section</label>
+      <input type="text" id="section" placeholder="Enter section (e.g., A, B, C)" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+      <label for="message">Message / Query</label>
+      <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 School. All Rights Reserved.
+  </footer>
+
+  <script>
+    function showMessage(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been submitted successfully.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
