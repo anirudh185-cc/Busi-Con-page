@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | College</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f1f5f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #004aad;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      background: #fff;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    form {
+      margin-bottom: 40px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #004aad;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #004aad;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #00327a;
+    }
+
+    footer {
+      text-align: center;
+      background: #004aad;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>College</h1>
+    <p>Inspiring Learning. Empowering Futures.</p>
+  </header>
+
+  <div class="container">
+    <h2>Student Contact Form</h2>
+    <p>Use this form to reach out to your college administration or faculty.</p>
+
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
+
+      <label for="rollno">Roll Number</label>
+      <input type="text" id="rollno" placeholder="Enter your roll number" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@college.edu" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+      <label for="department">Department</label>
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option value="CSE">Computer Science Engineering</option>
+        <option value="ECE">Electronics & Communication</option>
+        <option value="MECH">Mechanical Engineering</option>
+        <option value="CIVIL">Civil Engineering</option>
+        <option value="IT">Information Technology</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="year">Year of Study</label>
+      <select id="year" required>
+        <option value="">Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+        <option value="PG">Post Graduate</option>
+      </select>
+
+      <label for="message">Message / Query</label>
+      <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 College. All Rights Reserved.
+  </footer>
+</body>
+</html>
